@@ -1,3 +1,5 @@
+// Stwórz 3 obiekty klasy Student. Przypisz wartości do pól. Stwórz tablice i dodaj studentów do tablicy.
+// Przejdź przez studentów w tablicy i wywołaj wszystkie 4 metody z klasy Student.
 public class ZadanieDomoweNr4 {
     public static void main(String[] args) {
         Student student1 = new Student();
