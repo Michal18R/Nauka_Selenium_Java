@@ -7,10 +7,11 @@ public class Footballer extends Person{
         this.footballClub = footballClub;
         System.out.println("Jestem w konstruktorze Footballer");
     }
-
+    // nadpisanie metody eat() z bazowej klasy
+    public void eat(){
+        System.out.println("I like healthy food");
+    }
     public void playFutboll(){
-        eat();
-        walk();
         System.out.println("I am playing football in " + footballClub);
     }
 }
