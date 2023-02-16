@@ -15,12 +15,12 @@ public class WebDriversTest {
         driver2.findElementBy();
     }
 
-    private static WebDriver getDriver(String name){
-        if(name.equals("chrome")){
-            return new ChromeDriver();
-        } else if (name.equals("firefox")){
-            return new FirefoxDriver();
+        private static WebDriver getDriver(String name){
+            if(name.equals("chrome")){
+                return new ChromeDriver();
+            } else if (name.equals("firefox")){
+                return new FirefoxDriver();
+            }
+            return null;
         }
-        return null;
-    }
 }
