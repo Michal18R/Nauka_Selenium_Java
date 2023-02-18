@@ -3,8 +3,8 @@ package drivers;
 public class WebDriversTest {
     public static void main(String[] args) {
         //użycie poliformizmu
-        WebDriver driver = getDriver("chrome");
-        WebDriver driver2 = getDriver("firefox");
+        WebDriver driver = getDriver(DriverType.CHROME);
+        WebDriver driver2 = getDriver(DriverType.FIREFOX);
         //FirefoxDriver firefox = new FirefoxDriver();
 
         assert driver != null;
@@ -15,10 +15,10 @@ public class WebDriversTest {
         driver2.findElementBy();
     }
 
-        private static WebDriver getDriver(String name){
-            if(name.equals("chrome")){
+        private static WebDriver getDriver(DriverType type){
+            if(type==DriverType.CHROME){
                 return new ChromeDriver();
-            } else if (name.equals("firefox")){
+            } else if (type==DriverType.FIREFOX){
                 return new FirefoxDriver();
             }
             return null;
